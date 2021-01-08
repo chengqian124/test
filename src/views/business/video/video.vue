@@ -8,7 +8,7 @@
         <audio id="audio"></audio>
       </section>
       <button id="btn" @click="tackcapture">拍照</button>
-      <button @click="opening">开启</button>
+      <button @click="opening">开启拍照</button>
       <section>
         <canvas id="canvas"></canvas>
       </section>
