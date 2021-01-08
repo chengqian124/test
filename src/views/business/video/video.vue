@@ -1,6 +1,6 @@
 <template>
     <div>
-    <article>
+    <!-- <article>
       <section>
         <video id="video"></video>
       </section>
@@ -13,7 +13,8 @@
         <canvas id="canvas"></canvas>
       </section>
       <section><img src="" alt="" id="img" /></section>
-    </article>
+    </article> -->
+    <span>这是创建的dev分支</span>
   </div>
 
 </template>
