@@ -1,0 +1,50 @@
+// .content-box{
+//     width: 100%;
+//     height: 100%;
+//     .amap-demo{
+//         width: 100%;
+//         height: 100%;
+//     }
+// }
+.amap-page-container{
+        height: 100%;
+        position: relative;
+       
+    }
+    .search-box {
+      position: absolute !important;
+      top: 25px;
+      left: 20px;
+      z-index: 200 !important;
+    //   width: 50%;
+     
+    // .searchTip{
+    //     background: #fff;
+    //     z-index: 200;
+    // }
+    }
+    .amap-demo {
+      height: 90%;
+    }
+    .amap-logo {
+            display: none;
+     }
+   .amap-copyright {
+          bottom:-100px;
+           display: none;
+    } 
+    .amap-scalecontrol{
+        bottom: 4px !important;
+    }
+    .amap-geolocation-con{
+        bottom: 30px !important;
+        z-index: 199 !important;
+    }
+    ul li.active{
+        color: deeppink;
+    }
+  /deep/ .amap-ui-poi-picker-sugg-list{
+        background: #fff!important;
+        list-style: none;
+        margin-top: 5px;
+    }
