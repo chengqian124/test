@@ -126,6 +126,10 @@ export default {
       ]
     }
   },
+  created() {
+    let router=this.$route
+    console.log(router)
+  },
   methods: {
     submitAddress() {
 

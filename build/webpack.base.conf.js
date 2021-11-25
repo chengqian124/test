@@ -12,36 +12,36 @@ function resolve (dir) {
 
 module.exports = {
   context: path.resolve(__dirname, '../'),
-  entry: {
+  entry: {//入口文件
     app: './src/main.js'
   },
   output: {
-    path: config.build.assetsRoot,
-    filename: '[name].js',
-    publicPath: process.env.NODE_ENV === 'production'
+    path: config.build.assetsRoot,//路径是config目录下的index.js中的build配置中的assetsRoot，也就是dist目录
+    filename: '[name].js',//输出文件的名字，与prod整合时，会被替换成prod里的命名风格
+    publicPath: process.env.NODE_ENV === 'production'//根据环境变量选择路径
       ? config.build.assetsPublicPath
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json'],//告诉webpack需要执行的文件
     alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      'vue$': 'vue/dist/vue.esm.js',//简化导入代码
+      '@': resolve('src'),//一键回到src文件
     }
   },
   module: {
     rules: [
-      {
+      {//vue文件转化成js文件
         test: /\.vue$/,
         loader: 'vue-loader',
         options: vueLoaderConfig
       },
-      {
+      {//ES6转ES5， JSX转JS
         test: /\.js$/,
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
       },
-      {
+      {// 资源加载器，下同
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
         options: {
@@ -65,7 +65,7 @@ module.exports = {
           name: utils.assetsPath('fonts/[name].[hash:7].[ext]')
         }
       },
-      {
+      {//sass-loader加载器，使webpack可以识别scss/sass文件，默认使用node-sass进行编译，style-loader将处理结束的CSS代码存储在js中，运行时嵌入<style>后挂载至html页面上，加载器，使webpack可以识别css模块，css-loader
         test: /\.sass$/,
         loader: 'sass-loader!style-loader!css-loader',
       }
