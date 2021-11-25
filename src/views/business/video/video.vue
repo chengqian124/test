@@ -1,5 +1,5 @@
 <template>
-    <!-- <div class="uploadFile">
+  <!-- <div class="uploadFile">
     <article>
       <section>
         <video id="video"></video>
@@ -19,18 +19,17 @@
     <input type="submit" name="btn" value="提交" id="btnId" οnclick="check()" />
     <div id="myShow"></div>
 
-  </div> -->
-
+  </div>-->
 
   <div class="demo" style="margin-top:15px">
     <el-button @click="changeObj">点击</el-button>
     <div v-color style="width:100px;height:100px;">122</div>
 
     <!-- alt是图片加载失败的提示信息,title是鼠标放在图片上的提示信息 -->
-  
-    <img src="../../../assets/img/logo.png" title="这是标题" alt="这是alt">
 
-    <img src="http://img.png" srcset="" title="这是标题" alt="这是alt">
+    <img src="../../../assets/img/logo.png" title="这是标题" alt="这是alt" />
+
+    <img src="http://img.png" srcset title="这是标题" alt="这是alt" />
     <!-- <el-button @click="printPdf" >打印1</el-button>
     <el-button @click="printPdf2" >打印2</el-button>
 
@@ -59,14 +58,20 @@
 
     <div class="boxContent" @mousemove="clickBox($event)">
       {{value}}
-    </div> -->
-    <vue-esign ref="esign" :width="800" :height="300" :isCrop="isCrop" :lineWidth="lineWidth" :lineColor="lineColor" :bgColor.sync="bgColor" />
-  
-<button @click="handleReset">清空画板</button>
-  
-<button @click="handleGenerate">生成图片</button>
+    </div>-->
+    <vue-esign
+      ref="esign"
+      :width="800"
+      :height="300"
+      :isCrop="isCrop"
+      :lineWidth="lineWidth"
+      :lineColor="lineColor"
+      :bgColor.sync="bgColor"
+    />
 
+    <button @click="handleReset">清空画板</button>
 
+    <button @click="handleGenerate">生成图片</button>
   </div>
 </template>
 
