@@ -59,6 +59,9 @@
     <div class="boxContent" @mousemove="clickBox($event)">
       {{value}}
     </div>-->
+    <div>
+      打了tag
+    </div>
     <vue-esign
       ref="esign"
       :width="800"
