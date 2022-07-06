@@ -34,7 +34,7 @@
       </el-form-item>
       </el-form>
       <div class="submit">
-        <el-button type="success" @click="submit">登 录</el-button>
+        <el-button type="success" @click="submit">登 录123</el-button>
       </div>
     </el-card>
   </div>
