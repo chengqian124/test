@@ -37,6 +37,20 @@
         <el-button type="success" @click="submit">登 录</el-button>
       </div>
     </el-card>
+
+    <slide-verify 
+   
+    :w="364"
+    :h="142"
+    slider-text="向右滑动"
+    @success="onSuccess"
+    @fail="onFail"
+    @refresh="onRefresh"
+    :style="{width:'362px',marginLeft:'20px'}"
+    class="slide-box"
+    ref="slideBlock"
+    :imgs="imageList"
+  ></slide-verify>
   </div>
 </template>
 <style lang="scss" scoped src="./login.scss"></style>

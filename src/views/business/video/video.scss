@@ -1,61 +1,68 @@
-// .camera_outer{
-//     position: relative;
-//     overflow: hidden;
-//     background: url("../../../assets/img/bg.jpg") no-repeat center;
-//     background-size: 100%;
-//     video,canvas,.tx_img{
-//       -moz-transform:scaleX(-1);
-//       -webkit-transform:scaleX(-1);
-//       -o-transform:scaleX(-1);
-//       transform:scaleX(-1);
-//     }
-//     .btn_camera{
-//       position: absolute;
-//       bottom: 4px;
-//       left: 0;
-//       right: 0;
-//       height: 50px;
-//       background-color: rgba(0,0,0,0.3);
-//       line-height: 50px;
-//       text-align: center;
-//       color: #ffffff;
-//     }
-//     .bg_r_img{
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-//       right: 0;
-//       top: 0;
-//     }
-//     .img_bg_camera{
-//       position: absolute;
-//       bottom: 0;
-//       left: 0;
-//       right: 0;
-//       top: 0;
-//       img{
-//         width: 100%;
-//         height: 100%;
-//       }
-//       .img_btn_camera{
-//         position: absolute;
-//         bottom: 0;
-//         left: 0;
-//         right: 0;
-//         height: 50px;
-//         line-height: 50px;
-//         text-align: center;
-//         background-color: rgba(0,0,0,0.3);
-//         color: #ffffff;
-//         .loding_img{
-//           width: 50px;
-//           height: 50px;
-//         }
-//       }
-//     }
-//   }
-  .boxContent{
-      width: 100px;
-      height: 100px;
-      background: pink;
-  }
+.face-capture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tip {
+    position: fixed;
+    top: 48px;
+    z-index: 5;
+    font-size: 18px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: #333333;
+    line-height: 25px;
+}
+
+.face-capture video,
+.face-capture canvas {
+    position: fixed;
+    top: 117.5px;
+    object-fit: cover;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    transform: rotateY(180deg);
+}
+
+.face-capture .img-cover {
+    position: fixed;
+    top: 63px;
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.face-capture .contentp {
+    position: fixed;
+    top: 438px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333333;
+}
+
+.face-capture .rect {
+    border: 2px solid #0aeb08;
+    position: fixed;
+    z-index: 4;
+}
+
+.img-face {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-face .imgurl {
+    position: fixed;
+    top: 117.5px;
+    width: 266px;
+    height: 266px;
+    border-radius: 133px;
+}
