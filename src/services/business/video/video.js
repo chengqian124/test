@@ -221,11 +221,17 @@ export default {
     },
 
     mounted() {
-        let dom = document.getElementsByClassName('boxContent')
-            // console.log(dom)
-        dom.onmousemove = function(e) {
-            box.innerHTML = `${e.clientX}, ${e.clientY}`
-        }
+        //content+padding+border=150+20*2+5*2=200
+        let dom = document.getElementsByClassName('contentBox')
+        console.log(dom)
+        console.log(dom[0].clientHeight) //190  content+padding
+        console.log(dom[0].offsetHeight) //200  content+padding+border
+        console.log(dom[0].scrollHeight) //实际内容尺寸+padding 
+        console.log(dom[0].scrollTop) //0
+
+        // dom.onmousemove = function(e) {
+        //     box.innerHTML = `${e.clientX}, ${e.clientY}`
+        // }
     },
     directives: {
         color: {

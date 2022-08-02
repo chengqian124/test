@@ -54,8 +54,21 @@
 //       }
 //     }
 //   }
-  .boxContent{
-      width: 100px;
-      height: 100px;
-      background: pink;
-  }
+.boxContent {
+    width: 100px;
+    height: 100px;
+    background: pink;
+}
+
+.contentBox {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ccc;
+    padding: 20px;
+    background: pink;
+    text-align: center;
+    // line-height: 160px;
+    font-size: 18px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
