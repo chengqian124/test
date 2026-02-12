@@ -21,7 +21,7 @@
     <button @click="handleGenerate">生成图片</button> -->
     <div class="contentBox">
       <div style="width:100%;height:250px"> 
-这是测试的盒模型
+        这是测试的盒模型2.12修改
       </div>
     </div>
   </div>

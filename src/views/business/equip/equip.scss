@@ -1,0 +1,74 @@
+// .camera_outer{
+//     position: relative;
+//     overflow: hidden;
+//     background: url("../../../assets/img/bg.jpg") no-repeat center;
+//     background-size: 100%;
+//     video,canvas,.tx_img{
+//       -moz-transform:scaleX(-1);
+//       -webkit-transform:scaleX(-1);
+//       -o-transform:scaleX(-1);
+//       transform:scaleX(-1);
+//     }
+//     .btn_camera{
+//       position: absolute;
+//       bottom: 4px;
+//       left: 0;
+//       right: 0;
+//       height: 50px;
+//       background-color: rgba(0,0,0,0.3);
+//       line-height: 50px;
+//       text-align: center;
+//       color: #ffffff;
+//     }
+//     .bg_r_img{
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       top: 0;
+//     }
+//     .img_bg_camera{
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       right: 0;
+//       top: 0;
+//       img{
+//         width: 100%;
+//         height: 100%;
+//       }
+//       .img_btn_camera{
+//         position: absolute;
+//         bottom: 0;
+//         left: 0;
+//         right: 0;
+//         height: 50px;
+//         line-height: 50px;
+//         text-align: center;
+//         background-color: rgba(0,0,0,0.3);
+//         color: #ffffff;
+//         .loding_img{
+//           width: 50px;
+//           height: 50px;
+//         }
+//       }
+//     }
+//   }
+.boxContent {
+    width: 100px;
+    height: 100px;
+    background: pink;
+}
+
+.contentBox {
+    width: 200px;
+    height: 200px;
+    border: 5px solid #ccc;
+    padding: 20px;
+    background: pink;
+    text-align: center;
+    // line-height: 160px;
+    font-size: 18px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
